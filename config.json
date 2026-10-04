@@ -3,7 +3,7 @@
 
   "api": {
     "_comment": "Optional external IP/country lookup API (Cloudflare Worker). Used only as an EXTRA verification source; the built-in providers in get_country_from_ip() are tried first because they are faster and more reliable.",
-    "base_url": "https://dry-thunder-684c.4j89drj49rd-14070.workers.dev",
+    "base_url": "https://omid1.seifi-omid88.workers.dev",
     "endpoints": {
       "tor_check": "/tor-check",
       "lookup": "/lookup",
