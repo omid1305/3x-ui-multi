@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:latest
 
 RUN apk add --no-cache \
     curl \
@@ -17,7 +17,7 @@ RUN apk add --no-cache \
     && ln -sf /usr/share/zoneinfo/Asia/Tehran /etc/localtime
 
 # ---- 3x-ui panel binary -----------------------------------------------------
-RUN curl -L https://github.com/mhsanaei/3x-ui/releases/download/v3.6.0/x-ui-linux-amd64.tar.gz -o /tmp/x-ui.tar.gz \
+RUN curl -L https://github.com/mhsanaei/3x-ui/releases/latest/download/x-ui-linux-amd64.tar.gz -o /tmp/x-ui.tar.gz \
     && tar -xzf /tmp/x-ui.tar.gz -C /usr/local/ \
     && rm /tmp/x-ui.tar.gz \
     && chmod +x /usr/local/x-ui/x-ui
